@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <h1><img src="images/logo.svg" alt=""></h1>
+    <main>
+      <section class="bill">
+        <section class="preco">
+          <label>Bill</label>
+          <section class="input-icon">
+            <img src="images/icon-dollar.svg" alt="">
+            <input id="total" type="text" placeholder="0">
+          </section>
+        </section>
+  
+        <section class="buttons">
+          <h1>Select Tip %</h1>
+          <section class="btn-container">
+            <button class="opc">5%</button>
+            <button class="opc">10%</button>
+            <button class="opc">15%</button>
+            <button class="opc">25%</button>
+            <button class="opc">50%</button>
+            <input id="custom" type="text" placeholder="Custom">
+          </section>
+        </section>
+      
+        <section class="people">
+          <section class="cant-zero">
+            <label>Number of people </label>
+            <label class="zero"></label>
+          </section>
+          <section class="input-icon">
+            <img src="images/icon-person.svg" alt="" >
+            <input id="personTotal" type="text" placeholder="0">
+          </section>
+        </section>
+      </section>
+      <section class="value">
+        <section class="pay">
+          <section class="tip-amount">
+            <section class="tip-person">
+              Tip Amount <br> <span>/ person</span>
+            </section>
+            <p id="outPerson">$0.00</p>
+          </section>
+          <section class="total">
+            <section class="total-person">
+              Total<br> <span>/ person</span>
+            </section>
+            <p id="outTotal">$0.00</p>
+          </section>
+        </section>
+
+        <button class="reset">RESET</button>
+      </section>
+    </main>
+  </section>
+
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
